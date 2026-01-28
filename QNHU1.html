@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Các Câu Lạc Bộ – THPT Chuyên Chu Văn An</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: #66CCCC;
+        }
+
+        /* HEADER */
+        .header {
+             background: url("9.jpg") center/cover no-repeat;
+
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        /* CONTAINER */
+        .container {
+            width: 1000px;
+            margin: 50px auto;
+        }
+
+        /* CLUB GRID */
+        .clubs {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .club-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .club-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+        }
+
+        .club-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .club-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .club-content h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .club-content p {
+            font-size: 15px;
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .club-content a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #111;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+        .club-content a:hover {
+            background: #333;
+        }
+
+        footer {
+background: #ffff99;
+            text-align: center;
+            margin: 0px 0;
+            color: blue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>CÁC CÂU LẠC BỘ TRƯỜNG CHUYÊN CHU VĂN AN</h1>
+    <p>Nơi học sinh phát triển toàn diện – kỹ năng – đam mê</p>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+    <div class="clubs">
+
+        <!-- CLB BÓNG RỔ -->
+        <div class="club-card">
+            <img src="b.jpg">
+            <div class="club-content">
+                <h2>CLB Bóng Rổ</h2>
+                <p>
+                    CLB Bóng Rổ là nơi rèn luyện thể lực,
+                    tinh thần đồng đội và ý chí thi đấu.
+                    Các thành viên thường xuyên tập luyện
+                    và tham gia các giải đấu học sinh.
+                </p>
+                <a href="#">Xem chi tiết</a>
+            </div>
+        </div>
+
+        <!-- CLB THANH ÂM -->
+        <div class="club-card">
+            <img src="s.jpg">
+            <div class="club-content">
+                <h2>CLB Thanh Âm</h2>
+                <p>
+                    CLB Thanh Âm quy tụ những học sinh
+                    yêu âm nhạc, sân khấu và biểu diễn.
+                    Đây là nơi mỗi cá nhân được tỏa sáng
+                    bằng chính cá tính nghệ thuật của mình.
+                </p>
+                <a href="qnhu.html">Truy cập CLB</a>
+            </div>
+        </div>
+
+        <!-- CLB CẦU LÔNG -->
+        <div class="club-card">
+            <img src="t.jpg">
+            <div class="club-content">
+                <h2>CLB Cầu Lông</h2>
+                <p>
+                    CLB Cầu Lông giúp học sinh nâng cao
+                    sức khỏe, sự nhanh nhẹn và tính kỷ luật.
+                    Các buổi sinh hoạt diễn ra đều đặn,
+                    phù hợp cho mọi trình độ.
+                </p>
+                <a href="#">Xem chi tiết</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    © Trường THPT Chuyên Chu Văn An
+</footer>
+
+</body>
+</html>
